@@ -1,0 +1,188 @@
+$tl: 0.6s;
+.content {
+  padding: 0px 50px;
+}
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  .navbar {
+    width: 100%;
+    background-color: transparent;
+    .navbar-nav .nav-item a {
+      font-family: "Poppins", sans-serif !important;
+      letter-spacing: 1px;
+      color: #4d4d4d;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      &:hover {
+        transition: font-weight 300ms;
+      }
+    }
+    .navbar-nav > li > .dropdown-menu a:active {
+      background-color: #493979;
+      color: white;
+    }
+  }
+  .white-logo {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 300ms ease;
+  }
+  .navbar-brand {
+    font-family: "Poppins", sans-serif !important;
+    .logo {
+      position: relative;
+      width: 65px;
+      height: 65px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h1 {
+      color: #493979;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+    }
+    p {
+      color: #a6744e;
+      font-size: 8px;
+    }
+  }
+
+  .router-link-active {
+    font-weight: bold;
+    color: #493979 !important;
+    border-bottom: 1px solid #493979;
+  }
+  &.navbar-inverse {
+    background-color: #493979 !important;
+    .router-link-active {
+      border-bottom: 1px solid white !important;
+    }
+    .navbar-nav .nav-item a {
+      color: white !important;
+    }
+    .navbar-brand {
+      h1,
+      p {
+        color: white;
+      }
+    }
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .custom-toggler {
+    border: none;
+    .navbar-toggler-icon {
+      filter: invert(140%) sepia(54%) saturate(969%) hue-rotate(510deg);
+    }
+  }
+  .navbar-nav > li > .dropdown-menu .dropdown-item {
+    color: gray !important;
+  }
+}
+
+/* Custom media query for navbar toggler at 1200px */
+@media (max-width: 1257px) {
+  .content {
+    padding: 10px 10vw;
+  }
+}
+
+@media (max-width: 1060px) {
+  .navbar-expand-lg {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .navbar-expand-lg .navbar-collapse.collapse.show {
+    display: flex !important;
+  }
+  .navbar-nav {
+    display: block !important;
+    width: 100%;
+  }
+  .search-box:focus {
+    width: 100% !important;
+    margin: 0px;
+  }
+  .header {
+    padding: 0 !important;
+    justify-content: start;
+    overflow-y: auto !important;
+    .navbar {
+      width: 100%;
+      overflow-y: auto !important;
+    }
+    .collapse {
+      padding-top: 20px;
+    }
+    .navbar-nav .nav-item a {
+      color: black !important; /* Ensure good contrast on smaller screens */
+    }
+    .navbar {
+      background-color: #493979 !important;
+      overflow-y: auto;
+    }
+  }
+}
+
+/* Hide the toggler button on larger screens */
+@media (min-width: 1200px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 1235px) {
+  .navbar-brand {
+    margin-right: 6px !important;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .content {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    padding: 0 !important;
+    justify-content: start;
+    overflow-y: auto !important;
+    .navbar {
+      width: 100%;
+      overflow-y: auto !important;
+    }
+    .collapse {
+      padding-top: 20px;
+    }
+    .navbar-nav .nav-item a {
+      color: black !important; /* Ensure good contrast on smaller screens */
+    }
+    .navbar {
+      background-color: #493979 !important;
+      overflow-y: auto;
+    }
+  }
+}
