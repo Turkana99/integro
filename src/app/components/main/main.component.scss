@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .jumbotron {
   background-image: url(../../../../public/images/jumbBg.svg);
   background-repeat: no-repeat;
@@ -13,7 +15,7 @@
     left: 0px;
     background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 1) 10%,
+      rgba(255, 255, 255, 1) 5%,
       rgba(255, 255, 255, 0.4) 25%,
       rgba(255, 255, 255, 0) 50%,
       rgba(0, 0, 0, 0.3) 100%
@@ -25,7 +27,7 @@
       font-family: "Poppins", sans-serif !important;
       .sub_title {
         font-size: 16px;
-        color: #a6744e;
+        color: $title-color;
         font-weight: 600;
       }
       h1 {
@@ -70,8 +72,8 @@
 }
 
 @media only screen and (max-width: 630px) {
-  .jumb-content{
-    width:100%!important;
+  .jumb-content {
+    width: 100% !important;
   }
   .sub_title {
     font-size: 12px !important;
@@ -89,9 +91,7 @@
   }
 }
 
-
 @media only screen and (max-width: 555px) {
-
   .sub_title {
     font-size: 12px !important;
   }
