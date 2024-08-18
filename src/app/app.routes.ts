@@ -1,5 +1,11 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
+import { AboutComponent } from './components/about/about.component';
+import { ServicesComponent } from './components/services/services.component';
+import { TeamComponent } from './components/team/team.component';
+import { PartnersComponent } from './components/partners/partners.component';
+import { BlogsComponent } from './components/blogs/blogs.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
   {
@@ -10,5 +16,29 @@ export const routes: Routes = [
   {
     path: 'main',
     component: MainComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'service',
+    component: ServicesComponent,
+  },
+  {
+    path: 'team',
+    component: TeamComponent,
+  },
+  {
+    path: 'partner',
+    component: PartnersComponent,
+  },
+  {
+    path: 'blog',
+    component: BlogsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
 ];

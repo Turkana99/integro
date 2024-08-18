@@ -1,15 +1,18 @@
+@import "../../styles/variables.scss";
+
 .footer {
-  background-color: #493979;
+  background-color: $main-color;
   color: white;
   font-family: "Poppins", sans-serif !important;
-  .text {
-    font-size: 16px;
-    font-weight: 300;
+  padding: 0px 80px;
+  .about_text {
+    padding-right: 10rem;
+    .text {
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.6rem;
+    }
   }
-  .custom-divider-horizontal {
-    border-top-width: px !important;
-  }
-
   .logo_title {
     font-family: "Poppins", sans-serif !important;
     .logo {
@@ -24,30 +27,12 @@
     h1 {
       color: white;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 1.3rem;
       text-align: center;
     }
     p {
       color: white;
-      font-size: 8px;
-    }
-  }
-  .first li {
-    font-size: 16px !important;
-    font-weight: bold;
-    &:first-child {
-      padding-bottom: 0px;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  .address li {
-    &:hover {
-      text-decoration: none;
+      font-size: 0.5rem;
     }
   }
   ul {
@@ -65,47 +50,36 @@
       line-height: 30px;
       padding: 0px;
       font-family: "Poppins", sans-serif !important;
-      &:hover {
-        text-decoration: underline;
-        cursor: pointer;
+    }
+  }
+  .work_hoor {
+    .sub_title {
+      color: $title-color;
+    }
+  }
+  .contact_info {
+    li {
+      padding-bottom: 20px;
+      i {
+        color: $title-color;
       }
     }
   }
-  .nav-link {
-    border: none;
-    display: flex;
-    justify-content: start;
-    .sosial-icon {
-      width: 35px;
-      height: 35px;
-      img {
-        width: 100%;
-        height: 100%;
-      }
+
+  .copyright {
+    border-top: 0.01rem solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  @media only screen and (max-width: 1577px) {
+    .about_text {
+      padding-right: 2rem;
     }
   }
 }
 
-/* Hide the toggler button on larger screens */
-@media only screen and (max-width: 992px) {
-  ul {
-    padding-left: 10px !important;
-    margin: 0px;
-  }
-  .first {
-    padding-top: 10px;
-  }
-  .nav-item {
-    padding: 0px !important;
-    justify-content: flex-start !important;
-    li {
-      padding: 0px;
-    }
-  }
-  .copyright {
-    padding-left: 10px;
-  }
+@media only screen and (max-width: 1060px) {
   .footer {
-    padding: 40px 15px 0px 15px;
+    padding: 0px 20px !important;
   }
 }

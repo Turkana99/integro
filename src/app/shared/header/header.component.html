@@ -6,13 +6,13 @@
       >
         <div class="logo">
           <img
-            class="white-logo"
+            class="white-logo frs_logo"
             src="images/Logo.svg"
             alt="Logo"
             [ngStyle]="{ opacity: whiteLogo ? 0 : 1 }"
           />
           <img
-            class="white-logo"
+            class="white-logo scd_logo"
             src="images/LogoWh.svg"
             alt="Logo"
             [ngStyle]="{ opacity: whiteLogo ? 1 : 0 }"
@@ -24,7 +24,7 @@
         </div>
       </div>
       <button
-        class="navbar-toggler custom-toggler"
+        class="navbar-toggler custom-toggler pt-3"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNavDropdown"
@@ -32,7 +32,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+      <i class="fa-solid fa-bars navbar-toggler-icon"></i>
       </button>
       <div
         class="collapse navbar-collapse d-flex justify-content-end"
@@ -51,7 +51,7 @@
           <li class="nav-item px-2">
             <a
               class="nav-link"
-              routerLink=""
+              routerLink="about"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLinkActive="router-link-active"
               >About</a
@@ -60,7 +60,7 @@
           <li class="nav-item px-2">
             <a
               class="nav-link"
-              routerLink=""
+              routerLink="service"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLinkActive="router-link-active"
               >Services</a
@@ -69,7 +69,7 @@
           <li class="nav-item px-2">
             <a
               class="nav-link"
-              routerLink=""
+              routerLink="team"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLinkActive="router-link-active"
               >Team</a
@@ -78,7 +78,7 @@
           <li class="nav-item px-2">
             <a
               class="nav-link"
-              routerLink=""
+              routerLink="partner"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLinkActive="router-link-active"
               >Partners</a
@@ -87,10 +87,19 @@
           <li class="nav-item px-2">
             <a
               class="nav-link"
-              routerLink="contact"
+              routerLink="blog"
               [routerLinkActiveOptions]="{ exact: true }"
               routerLinkActive="router-link-active"
               >Blogs</a
+            >
+          </li>
+          <li class="nav-item px-2">
+            <a
+              class="nav-link"
+              routerLink="contact"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLinkActive="router-link-active"
+              >Contact</a
             >
           </li>
 
