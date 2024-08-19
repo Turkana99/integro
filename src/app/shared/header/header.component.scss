@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 $tl: 0.6s;
 .content {
   padding: 0px 50px;
@@ -42,7 +44,7 @@ $tl: 0.6s;
     }
 
     .navbar-nav > li > .dropdown-menu a:active {
-      background-color: #493979;
+      background-color: $main-color;
       color: white;
     }
   }
@@ -58,20 +60,26 @@ $tl: 0.6s;
       }
     }
     h1 {
-      color: #493979;
+      color: $main-color;
       font-weight: bold;
       font-size: 20px;
       text-align: center;
     }
     p {
-      color: #a6744e;
+      color: $title-color;
       font-size: 8px;
     }
   }
 
+  .router-link-active {
+    color: $main-color;
+    font-weight: bold;
+    border-bottom: 1px solid $main-color;
+  }
+
   /* Styles for when .navbar-inverse is applied */
   &.navbar-inverse {
-    background-color: #493979 !important;
+    background-color: $main-color !important;
 
     .navbar-nav .nav-item a {
       color: white !important;
@@ -141,7 +149,7 @@ $tl: 0.6s;
     .navbar {
       width: 100%;
       overflow-y: auto !important;
-      background-color: #493979 !important;
+      background-color: $main-color !important;
       overflow-y: auto;
       .navbar-nav {
         display: block !important;
@@ -210,7 +218,7 @@ $tl: 0.6s;
       color: black !important; /* Ensure good contrast on smaller screens */
     }
     .navbar {
-      background-color: #493979 !important;
+      background-color: $main-color !important;
       overflow-y: auto;
     }
   }

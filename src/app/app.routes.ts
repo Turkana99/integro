@@ -6,6 +6,8 @@ import { TeamComponent } from './components/team/team.component';
 import { PartnersComponent } from './components/partners/partners.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
+import { EvaluationComponent } from './components/evaluation/evaluation.component';
 
 export const routes: Routes = [
   {
@@ -40,5 +42,13 @@ export const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+  },
+  {
+    path: 'blog-detail/:id',
+    component: BlogDetailComponent,
+  },
+  {
+    path: 'evaluation',
+    component: EvaluationComponent,
   },
 ];
